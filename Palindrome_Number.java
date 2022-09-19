@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class dope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int p,j;
+        p=sc.nextInt();
+        for(j=0;j<p;j++)
+        {
+           int a=sc.nextInt();
+           int r,d=0;
+           int n=a;
+           while(n!=0)
+           {
+              r=n%10;
+              n=n/10;
+              d=d*10+r;
+           }
+        if(d==a)
+        {
+            System.out.println("True");
+        }
+        else
+        {
+            System.out.println("False");
+        }
+    }
+   }    
+}

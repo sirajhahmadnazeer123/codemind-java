@@ -1,24 +1,27 @@
 import java.util.Scanner;
-class Spy
+class Hydra
 {
     public static void main(String args[])
     {
-        Scanner sc =    new Scanner(System.in);
-        int a,p=1,s=0,y;
+        Scanner sc = new Scanner(System.in);
+        int a,v,temp,m=1,s=0;
         a=sc.nextInt();
-        while(a>0)
+        while(a!=0)
         {
-            y=a%10;
-            p*=y;
-            s+=y;
+            v=a%10;
+            m*=v;
+            s+=v;
             a=a/10;
+            
         }
-        if(s==p)
+        if(m==s)
         {
             System.out.println("Spy Number");
         }
-        else{
+        else
+        {
             System.out.println("Not Spy Number");
         }
+        
     }
 }

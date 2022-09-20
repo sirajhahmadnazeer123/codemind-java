@@ -1,17 +1,20 @@
-import java.util.Scanner;
-class intrest
+import java.util.*;
+class compound
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        double p,r,t;
-        double d,s,o;
-        p=sc.nextDouble();
-        r=sc.nextDouble();
-        t=sc.nextDouble();
-        d=1+(r/100);
-        s=Math.pow(d,t);
-        o=(p*s);
+        Scanner sc = new Scanner (System.in);
+        double a,b,c;
+        double d,l,o;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        c=sc.nextInt();
+        d=1+(b/100);
+        l=Math.pow(d,c);
+        o=(a*l);
         System.out.format("%.2f",o);
+        
+        
+        
     }
 }

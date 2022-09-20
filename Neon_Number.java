@@ -1,20 +1,20 @@
-import java.util.Scanner;
-class Neon
+import java.util.*;
+class neon
 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        int a,s=0,p,m;
+        int a,v,temp,t=0,l;
         a=sc.nextInt();
-        p=a*a;
-        while(p>0)
+        temp=a;
+        v=a*a;
+        while(v!=0)
         {
-            m=p%10;
-            s+=m;
-            p=p/10;
-            
+            l=v%10;
+            t+=l;
+            v/=10;
         }
-        if(s==a)
+        if(temp==t)
         {
             System.out.println("Neon Number");
         }
@@ -22,5 +22,6 @@ class Neon
         {
             System.out.println("Not Neon Number");
         }
+        
     }
 }

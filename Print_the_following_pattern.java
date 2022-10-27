@@ -1,19 +1,25 @@
 import java.util.Scanner;
-class print
+class Pattern
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        int a;
-        a=sc.nextInt();
-        for(int i=1;i<=a;i++)
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int i,j;
+        for(i=1;i<=a;i++)
         {
-            for(int j=i;j<=a;j++)
+            for(j=1;j<=a;j++)
             {
-                System.out.print(j+" ");
+                if(i==j ||(i==a+1-j) )
+                {
+                    System.out.print(a-i+1+" ");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
-       
     }
 }

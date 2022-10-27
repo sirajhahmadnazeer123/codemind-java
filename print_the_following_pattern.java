@@ -10,13 +10,13 @@ class Pattern
         {
             for(j=1;j<=a;j++)
             {
-                if(i==j || j==1 || (i+j)==(a+j))
+                if(i==j ||(i==a+1-j) )
                 {
-                    System.out.print("*");
+                    System.out.print("x");
                 }
                 else
                 {
-                    System.out.print(" ");
+                    System.out.print("0");
                 }
             }
             System.out.println();

@@ -8,16 +8,13 @@ class Pattern
         int i,j;
         for(i=1;i<=a;i++)
         {
-            for(j=1;j<=a;j++)
+            for(j=1;j<a-1;j++)
             {
-                if(i==j)
-                {
-                    System.out.print("0");
-                }
-                else
-                {
-                    System.out.print("x");
-                }
+             System.out.print(j);   
+            }
+            for(j=1;j<a-2;j++)
+            {
+                System.out.print(j);
             }
             System.out.println();
         }
